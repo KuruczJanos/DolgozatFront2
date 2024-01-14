@@ -13,17 +13,16 @@
             <h1 class="cim">Szabaduló Szoba</h1>
             <div class="m-5 d-grid gap-2 col-6 mx-auto">
                 <a routerLink="/reslist" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary" type="button">Foglalások listázása</a>    
-                <a href="#" class="btn btn-primary" type="button">Új foglalás felvétele</a>    
+                <a routerLink="/resadd" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary" type="button">Új foglalás felvétele</a>    
             </div>
+            <router-outlet></router-outlet>
             <router-outlet></router-outlet>
         </div>
         <div class="content">
-            <div class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, iste inventore nulla optio officiis repellendus autem maxime asperiores molestias voluptatum odit omnis deserunt eaque totam quaerat pariatur. Voluptatibus, quasi. Aperiam.lorem</div>
-            <div class="table">
-            </div>
+            <div class="paragraph mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, iste inventore nulla optio officiis repellendus autem maxime asperiores molestias voluptatum odit omnis deserunt eaque totam quaerat pariatur. Voluptatibus, quasi. Aperiam.lorem</div>
         </div>
-        <div class="footer">
-            <div class="about">Bemutatkozás helyeő</div>
+        <div class="footer mt-5">
+            <div class="about">Kurucz János --- 2024.01.14 --- Frotend progamozás --- Dolgozat --- SZOFTII/1/E</div>
         </div>
     </div>
 </body>

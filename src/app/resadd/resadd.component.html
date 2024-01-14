@@ -1,0 +1,29 @@
+<div class="row mt-2">
+    <div *ngFor="let oszlop of oszlopok" class="col felirat">
+        {{oszlop.text}}
+    </div>
+    <div class="col">
+    </div>
+</div>
+<div class="row mt-2">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+
+        <ng-container *ngIf="oszlop.type=='Checkbox'; else simainput">
+            <div class="form-check form-switch">
+                <input [(ngModel)]="newFoglalas[oszlop.key]" class="form-check-input" type="checkbox">
+             </div>
+        </ng-container>
+        
+        <ng-template #simainput>
+            <input [(ngModel)]="newFoglalas[oszlop.key]" [type]="oszlop.type" class="form-control">
+        </ng-template>
+       
+    </div>
+
+    <div class="col">
+        <button (click)="postFoglalas()" type="button" class="btn btn-primary">Hozzáadás</button>
+    </div>
+    
+    <a routerLink="/app" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary mt-3" type="button">Elrejtés</a>
+
+</div>

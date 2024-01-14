@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 .container{
-    /*background: url(jatek.jpg) no-repeat;*/
+    background: url(jatek.jpg) no-repeat;
     width: 99%;
-    height: 1000px;
+    height: 99%;
     position: relative;
 }
-.cim{
+h1{
     text-align: center;
     color: white;
-    font-family: "Salsa", cursive;
-    font-weight: 400;
+    font-family: "Salsa";
+    font-weight: 400px;
     font-style: normal;
+    font-size: 40px;
+}
+.paragraph{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.about{
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
